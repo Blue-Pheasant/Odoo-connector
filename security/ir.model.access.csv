@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_synchonorous_intergration_synchonorous_intergration,synchonorous_intergration.synchonorous_intergration,model_synchonorous_intergration_synchonorous_intergration,base.group_user,1,1,1,1
+access_sync_product,access_sync_product,model_sync_product,base.group_user,1,1,1,1
+access_accept_sync_product,access_accept_sync_product,model_accept_sync_product,base.group_user,1,1,1,1

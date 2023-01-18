@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="sync_product_form_view" model="ir.ui.view">
+            <field name="name">sync.product.form.view</field>
+            <field name="model">sync.product</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" string="Product Name" class="oe_edit_only"/>
+                            <h1><field name="name"/></h1>
+                        </div>
+                        <group name="images">
+                            <group>
+                                <field name="sale_ok"/>
+                                <field name="purchase_ok"/>
+                            </group>
+                            <group>
+                                <field name="weight"/>
+                                <field name="volume"/>
+                            </group>                            
+                        </group>
+                        <notebook>
+                            <page name="general_information" string="General Information">
+								<group>
+									<group string="Category">
+										<field name="type"/>
+                                        <field name="category"/>
+									</group>
+                                    <group string="Price">
+										<field name="list_price"/>
+                                        <field name="standard_price"/>
+									</group>
+									<group>
+										<label for="description" colspan="2"/>
+										<field name="description" colspan="2" nolabel="1"/>
+									</group>
+								</group>
+							</page>
+							<page name="additional_information" string="Additional Information">
+								<group>
+									<group string="Sales">
+										<field name="available_in_pos"/>
+                                        <field name="to_weight"/>
+									</group>
+                                    <group string="Sales">
+                                        <field name="invoicing_policy"/>
+                                        <field name="expense_policy"/>
+									</group>
+								</group>
+							</page>							
+						</notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="sync_product_tree_view" model="ir.ui.view">
+            <field name="name">sync.product.tree.view</field>
+            <field name="model">sync.product</field>
+            <field name="arch" type="xml">
+                <tree string="Products" default_order="create_date desc">
+                    <field name="image_product" string="Product's Image" widget="image" width="48" height="48"/>
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="category"/>
+                    <field name="list_price"/>
+                    <field name="description"/>
+                    <field name="work_flow_state" decoration-success="work_flow_state == 'Accepted'" decoration-info="work_flow_state == 'Unaccept'" widget="badge" optional="show"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_sync_product" model="ir.actions.act_window">
+            <field name="name">Sync Product</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sync.product</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('sync_product_tree_view')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('sync_product_form_view')})]"/>
+        </record>
+
+        <menuitem id="menu_sync_product"
+            name="Sync Product"
+            action="action_sync_product"
+            sequence="10"
+            groups="base.group_user"/>
+    </data>
+</odoo>

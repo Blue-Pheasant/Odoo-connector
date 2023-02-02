@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Blue-Pheasant/Odoo-connector">
-    <img alt="Odoo Contributer" src="./static/description/icon.svg" width="100" />
+    <img alt="Odoo Contributer" src="./static/description/odoo-icon.png" width="100" />
     <img alt="Odoo Connector" src="./static/description/icon.svg" width="100" />
     <h2 align="center">Odoo Connector</h2>
   </a>
@@ -123,6 +123,6 @@ git push YOUR_REPO_URL master
 ------
 
 ## :books: Documentation
-If you want in-depth knowledge about this project, then we have written them under the in-depth documents, with all the love, spread of the Ho Chi Minh university of Technology students in this project. [Read more](docs/README.md) [Watch remove](demo/demo.mp4)
+If you want in-depth knowledge about this project, then we have written them under the in-depth documents, with all the love, spread of the Ho Chi Minh university of Technology students in this project. [Read more](docs/README.md) [Watch remove](https://drive.google.com/file/d/1cyEKF2E4GdLQ6wTf2B4FHblO3akxth03/view?usp=sharing)
 
 Made with my :heart: and youthful enthusiasm

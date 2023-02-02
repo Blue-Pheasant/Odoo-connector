@@ -14,5 +14,4 @@ The solution for data synchronization between sales websites and Odoo-ERP system
     * [Architecture](architecture/architecture.md)
 
 - Development
-    * [Custom more feature](development/develop-new-feature.md)
     * [API services](development/api-services.md)

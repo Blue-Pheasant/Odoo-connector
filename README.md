@@ -123,6 +123,8 @@ git push YOUR_REPO_URL master
 ------
 
 ## :books: Documentation
-If you want in-depth knowledge about this project, then we have written them under the in-depth documents, with all the love, spread of the Ho Chi Minh university of Technology students in this project. [Read more](docs/README.md) [Watch remove](https://drive.google.com/file/d/1cyEKF2E4GdLQ6wTf2B4FHblO3akxth03/view?usp=sharing)
+If you want in-depth knowledge about this project, then we have written them under the in-depth documents, with all the love, spread of the Ho Chi Minh university of Technology students in this project. [Read more](docs/README.md) 
+
+I recorded a short demo video, you can access and watch it. [Watch demo](https://drive.google.com/file/d/1cyEKF2E4GdLQ6wTf2B4FHblO3akxth03/view?usp=sharing)
 
 Made with my :heart: and youthful enthusiasm
